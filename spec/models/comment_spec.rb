@@ -7,7 +7,7 @@ RSpec.describe Comment, type: :model do
   end
 
   describe 'Tests Comment model' do
-    user = User.create(name: 'Ram', photo: 'https://unsplash.com/photos/6PP8DrhY0aA', bio: 'Hindu god.')
+    User.create(name: 'Ram', photo: 'https://unsplash.com/photos/6PP8DrhY0aA', bio: 'Hindu god.')
     post = Post.create(author: subject, title: 'Intro', text: 'Welcome to this blog!')
 
     subject { Comment.new }

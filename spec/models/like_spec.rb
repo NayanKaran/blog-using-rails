@@ -6,7 +6,7 @@ RSpec.describe Like, type: :model do
     it { should belong_to(:post) }
   end
   describe 'Tests for Like model' do
-    user = User.create(name: 'Ram', photo: 'https://unsplash.com/photos/6PP8DrhY0aA', bio: 'Hindu god.')
+    User.create(name: 'Ram', photo: 'https://unsplash.com/photos/6PP8DrhY0aA', bio: 'Hindu god.')
     post = Post.create(author: subject, title: 'Intro', text: 'Welcome to this blog!')
 
     subject { Like.new }
