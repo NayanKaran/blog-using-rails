@@ -36,4 +36,6 @@ class PostsController < ApplicationController
       end
     end
   end
+
+  private :post_params
 end

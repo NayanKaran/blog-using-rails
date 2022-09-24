@@ -27,4 +27,6 @@ class CommentsController < ApplicationController
       end
     end
   end
+
+  private :comment_params
 end
